@@ -4,52 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email tables.html</title>
+    <title>Table Example</title>
+
+    <link href="https://cdn.tailwindcss.com/2.2.16/tailwind.min.css"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-gray-200">
 
-    <h1>Billboard Top Songs in America in April 2023!</h1>
+    <h1 class="text-4xl text-center my-8">Billboard Top Songs in America in
+      April 2023!</h1>
 
-    <table>
-      <tr>
-        <th>Song</th>
-        <th>Artist</th>
+    <div class="overflow-x-auto m-10">
+      <table class="table-fixed w-full text-left whitespace-no-wrap">
+        <thead>
+          <tr class="text-gray-700">
+            <th class="w-1/4 px-4 py-2">Song</th>
+            <th class="w-1/4 px-4 py-2">Artist</th>
+            <th class="w-1/4 px-4 py-2">Audio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-gray-600">
+            <td class="border px-4 py-2">Last Night</td>
+            <td class="border px-4 py-2">Morgan Wallen</td>
+            <td class="border px-4 py-2"><audio controls
+                src="./audio/onlymp3.to - Morgan Wallen - Last Night (Lyrics)-AYX7mrA1f6E-256k-1655660081057.mp3"
+                type="audio/mp3">
+              </audio>
+            </td>
+          </tr>
+          <tr class="text-gray-600">
+            <td class="border px-4 py-2">Kill Bill</td>
+            <td class="border px-4 py-2">SZA</td>
+            <td class="border px-4 py-2"><audio controls
+                src="./audio/onlymp3.to - SZA - Kill Bill (Lyrics) I might kill my ex-C60G9l1qX4M-256k-1655701389626.mp3"
+                type="audio/mp3">
+              </audio>
+            </td>
+          </tr>
+          <tr class="text-gray-600">
+            <td class="border px-4 py-2">Flowers</td>
+            <td class="border px-4 py-2">Miley Cyrus</td>
+            <td class="border px-4 py-2">
+              <audio controls 
+                src="./audio/onlymp3.to - Miley Cyrus - Flowers (Lyrics)-SpYgV0yaOg4-256k-1654768620821.mp3""
+                type="audio/mp3">
+              </audio>
+            </td>
+          </tr>
+          <tr class="text-gray-600">
+            <td class="border px-4 py-2">Ella Baila Sola</td>
+            <td class="border px-4 py-2">Eslabon Armado X Peso Pluma</td>
+            <td class="border px-4 py-2">
+              <audio controls 
+                src="./audio/onlymp3.to - Eslabon Armado, Peso Pluma - Ella Baila Sola (Letra  Lyrics)-UfzQTrsU0H8-256k-1657216423313.mp3"
+                type="audio/mp3">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-      </tr>
-      <tr>
-        <td>Search & Rescue</td>
-        <td>Morgan Wallen</td>
+      <p class="text-center my-8">The rest is history</p>
 
-      </tr>
-      <tr>
-        <td>Centro comercial Moctezuma</td>
-        <td>Drake</td>
-
-      </tr>
-      <tr>
-        <td>Flowers</td>
-        <td>Miley Cyrus</td>
-
-      </tr>
-      <tr>
-        <td>Kill Bill</td>
-        <td>SZA</td>
-
-      </tr>
-      <tr>
-        <td>Creepin</td>
-        <td>Metro Boomin, The Weeknd & 21 Savage</td>
-
-      </tr>
-      <tr>
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-
-      </tr>
-    </table>
-
-    <p>The rest is history</p>
-
-  </body>
-</html>
+    </body>
+  </html>
